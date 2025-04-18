@@ -1,17 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datei Upload/Download App</title>
   <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
 </head>
-
 <body>
+  <header>
+    <h1>Datei Upload/Download App</h1>
+    <nav>
+      <button id="uploadMenuBtn">Hochladen</button>
+      <button id="downloadMenuBtn">Herunterladen</button>
+    </nav>
+  </header>
   <main>
-    <h1>Vanilla JavaScript App V1</h1>
+    <!-- Upload-Bereich -->
+    <section id="uploadSection" class="active">
+      <h2>Datei hochladen</h2>
+      <input type="file" id="fileInput">
+      <button id="uploadBtn">Hochladen</button>
+    </section>
+    <!-- Download-Bereich -->
+    <section id="downloadSection">
+      <h2>Datei herunterladen</h2>
+      <label for="downloadFilename">Dateiname:</label>
+      <input type="text" id="downloadFilename" placeholder="Dateiname eingeben">
+      <button id="downloadBtn">Herunterladen</button>
+    </section>
   </main>
+  <script src="script.js"></script>
 </body>
-
 </html>
