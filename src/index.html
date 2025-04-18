@@ -1,34 +1,26 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Datei Upload/Download App</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Datei Upload/Download App</h1>
-    <nav>
-      <button id="uploadMenuBtn">Hochladen</button>
-      <button id="downloadMenuBtn">Herunterladen</button>
-    </nav>
-  </header>
-  <main>
-    <!-- Upload-Bereich -->
-    <section id="uploadSection" class="active">
-      <h2>Datei hochladen</h2>
-      <input type="file" id="fileInput">
-      <button id="uploadBtn">Hochladen</button>
-    </section>
-    <!-- Download-Bereich -->
-    <section id="downloadSection">
-      <h2>Datei herunterladen</h2>
-      <label for="fileList">Verfügbare Dateien:</label>
-      <select id="fileList"></select>
-      <button id="downloadBtn">Herunterladen</button>
-    </section>
-  </main>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dateien herunterladen</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dateien Downloader</h1>
+    </header>
+    <main>
+      <p>
+        Klicken Sie auf „Alle Dateien herunterladen“, um alle Dateien aus dem
+        Unterverzeichnis <code>/Dateien</code> herunterzuladen.
+      </p>
+      <button id="downloadAllBtn">Alle Dateien herunterladen</button>
+      <p class="note">
+        (Hinweis: Es öffnet sich ein Dialog, in dem Sie Ihr Zielverzeichnis
+        auswählen können – dies funktioniert nur in unterstützten Browsern.)
+      </p>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
